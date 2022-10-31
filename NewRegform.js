@@ -6,7 +6,7 @@ export default function NewRegform() {
 
     const [name, setName] = useState('');
     const [add, setAddress] = useState('');
-    const [age, setAge] = useState('');
+    const [age, setAge] = useState(25);
     const [sub, setTopic] = useState('');
     const [checkedList, setCheckedList] = useState([]);
     const listData = [
@@ -34,8 +34,8 @@ export default function NewRegform() {
      
       };
       const handleAge = (e) => {
-        setAge(e.target.value);
-     
+       // setAge(e.target.value);
+        setAge(age +1);
       };
       const handleTopicChange = (e) => {
         setTopic(e.target.value)
@@ -122,7 +122,8 @@ export default function NewRegform() {
 
        <div>
        <label>Age</label>
-        <input onChange={handleAge} value={age} type="text"/>
+        {/* <input onChange={handleAge} value={age} type="text"/> */}
+        <button onClick={handleAge}> {age}</button> 
        </div>
 
        <div>
