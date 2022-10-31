@@ -122,7 +122,7 @@ export default function NewRegform() {
 
        <div>
        <label>Age</label>
-        <input onChange={handleAge} value={age} type="text"/>
+        <input onChange={handleAge} value={age} type="number"/>
        </div>
 
        <div>
