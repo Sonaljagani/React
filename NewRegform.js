@@ -6,7 +6,7 @@ export default function NewRegform() {
 
     const [name, setName] = useState('');
     const [add, setAddress] = useState('');
-    const [age, setAge] = useState(25);
+    const [age, setAge] = useState('');
     const [sub, setTopic] = useState('');
     const [checkedList, setCheckedList] = useState([]);
     const listData = [
@@ -34,8 +34,8 @@ export default function NewRegform() {
      
       };
       const handleAge = (e) => {
-       // setAge(e.target.value);
-        setAge(age +1);
+        setAge(e.target.value);
+     
       };
       const handleTopicChange = (e) => {
         setTopic(e.target.value)
@@ -61,9 +61,9 @@ export default function NewRegform() {
         const onChangeValue =(e) => {
               setGender(e.target.value);
             }
- const handleDay =(e) => {
-  setDayList(e.target.value);
- }
+//  const handleDay =(e) => {
+//   setDayList(e.target.value);
+//  }
         
           
 
@@ -122,8 +122,7 @@ export default function NewRegform() {
 
        <div>
        <label>Age</label>
-        {/* <input onChange={handleAge} value={age} type="text"/> */}
-        <button onClick={handleAge}> {age}</button> 
+        <input onChange={handleAge} value={age} type="text"/>
        </div>
 
        <div>
@@ -158,7 +157,9 @@ export default function NewRegform() {
         </div>
       <div  style={{display: 'block', width: 650, paddingLeft: 500 }}>
         <label>Enter a week day</label>
-        <AutoComplete data={dayData} onChange={handleDay} onSelect={setDayList}/>
+        <AutoComplete data={dayData} 
+       // onChange={handleDay}
+         onSelect={setDayList}/>
       </div>
       <button color='red' onClick={handleSubmit}>Submit</button>
       
