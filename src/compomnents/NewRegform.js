@@ -139,31 +139,31 @@ export default function NewRegform() {
       <FormControl class="flex-container">
         <div className='box-1'>
        <div>
-       <FormLabel>Name</FormLabel>
+       <FormLabel style={{paddingRight: '100px',}}>Name</FormLabel>
        <TextField label='Name'variant='outlined'size='small' onChange={handleName} value={name} type="text"required/>
        </div>
 
         <div>
-       <FormLabel >Address</FormLabel>
+       <FormLabel style={{paddingRight: '80px',}} >Address</FormLabel>
        <TextField label='Address'variant="outlined" size='small'onChange={handleAdd} value={add} type="text" />
         
        </div> 
 
        <div>
-       <FormLabel>Age</FormLabel>
+       <FormLabel style={{paddingRight: '110px',}}>Age</FormLabel>
         <TextField label='Age'variant='outlined'size='small'onChange={handleAge} value={age} type="number"/>
        </div>
 
        <div>
-       <Box>
-       <FormLabel>Subject</FormLabel>             
+       
+       <FormLabel style={{paddingRight: '80px',}}>Subject</FormLabel>             
            <Select sx={{ minWidth: 180 }} size='small' value={sub} label="Subject"
             onChange={handleTopicChange}>
             <MenuItem value="React">React</MenuItem>
             <MenuItem value="Angular">Angular</MenuItem>
             <MenuItem value="Vue">Vue</MenuItem>
             </Select>
-            </Box>
+          
         </div>
         </div>
         <div className='box-2'>
