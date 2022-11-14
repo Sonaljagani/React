@@ -4,8 +4,8 @@ import './App.css'
 // import Login from './compomnents/Login'
 import NewRegform from './compomnents/NewRegform'
 // import RegistrationForm from './compomnents/RegistrationForm'
-// import './compomnents/appStyle.css' 
-// import style from './compomnents/appStyle.module.css'
+import './compomnents/appStyle.css' 
+ //import style from './compomnents/appStyle.module.css'
 // import PostList from './compomnents/PostList'
 // import PostForm from './compomnents/PostForm'
 // import DataFachinghooks from './compomnents/DataFachinghooks'
@@ -16,7 +16,7 @@ import NewRegform from './compomnents/NewRegform'
  class App extends Component {
   render() {
     return (
-      <div className='App'>
+      <div>
         {/* <ClickCounter/> */}
         {/* <Login/>  */}
         {/* <RegistrationForm/> */}
