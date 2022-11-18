@@ -164,7 +164,7 @@ const NewoneRegForm = () => {
               formik.touched.checkedList && Boolean(formik.errors.checkedList)
             }
           >
-            {formik.touched.checkedList &&formik.errors.checkedList}
+            {formik.errors.checkedList}
           </FormHelperText>
         </Box>
         <Box className="box-3">
