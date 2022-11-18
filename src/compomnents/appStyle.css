@@ -10,9 +10,7 @@
     justify-content:space-between;
 } 
 .box-1{
-    flex: 2;
-   
-  
+    flex: 2;  
     
 }
 .box-2{
@@ -24,7 +22,8 @@
 .flex-container {
     display: flex;
     align-items: stretch;
-    background-color:#f1f1f1;
+  
+    
    
   }
   
@@ -36,15 +35,8 @@
     line-height: 60px;
   
   }
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
- .row{
-    flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  flex: 2;
+ .label{
+  width: 100px;
+  display: inline-block;
  }
+

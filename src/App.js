@@ -1,15 +1,9 @@
 import React, { Component } from 'react'
 import './App.css'
-// import { ClickCounter } from './compomnents/ClickCounter'
-// import Login from './compomnents/Login'
-import NewRegform from './compomnents/NewRegform'
-// import RegistrationForm from './compomnents/RegistrationForm'
 import './compomnents/appStyle.css' 
- //import style from './compomnents/appStyle.module.css'
-// import PostList from './compomnents/PostList'
-// import PostForm from './compomnents/PostForm'
-// import DataFachinghooks from './compomnents/DataFachinghooks'
-// import ParentComponent from './compomnents/My app/ParentComponent'
+import NewoneRegform from './compomnents/NewoneRegForm'
+
+
 
 
 
@@ -20,7 +14,12 @@ import './compomnents/appStyle.css'
         {/* <ClickCounter/> */}
         {/* <Login/>  */}
         {/* <RegistrationForm/> */}
-         <NewRegform/> 
+         {/* <NewRegform/>  */}
+          {/* <Newform/>   */}
+          {/* <WithMaterialUI/> */}
+          {/* <RegValidation/> */}
+         <NewoneRegform/> 
+         {/* <Checked/>  */}
         {/* <PostList/> */}
         {/* <PostForm/> */}
         {/* <DataFachinghooks/> */}
@@ -41,29 +40,6 @@ export default App
 
 
 
-
-
-// import Form from './compomnents/Form'
-// import ParentComp from './compomnents/ParentComp'
-// import PureComp from './compomnents/PureComp'
-// import Table from './compomnents/Table'
-
-// import { Greet } from './compomnents/Greet';
-// import { Welcome} from './compomnents/welcome';
-// //import  Welcome from './compomnents/welcome';
-// import  {Hello} from './compomnents/Hello';
-// import { Message } from './compomnents/message';
-// import { Counter } from './compomnents/Counter';
-// import { Functionclick } from './compomnents/Functionclick';
-// import { Classclick } from './compomnents/Classclick';
-// import { EventBind } from './compomnents/EventBind';
-// import {ParentComponent} from './compomnents/ParentComponent';
-// import {UserGreeting} from './compomnents/UserGreeting';
-// import { NameList } from './compomnents/NameList';
-// import {Stylesheet}  from './compomnents/Stylesheet';
-// import { Inline } from './compomnents/Inline';
-// import './compomnents/appStyle.css'
-// import style from './compomnents/appStyle.module.css'
 
 
 
@@ -115,4 +91,4 @@ export default App
   {/* <Hello></Hello> */}
       {/* <Form/> */}
         {/* <Table/> */}
-        // <ParentComp/>
+       {/*<ParentComp/>*/}
