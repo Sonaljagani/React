@@ -1,94 +1,53 @@
-import React, { Component } from 'react'
-import './App.css'
-import './compomnents/appStyle.css' 
-import NewoneRegform from './compomnents/NewoneRegForm'
+import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Navigate,
+  Routes,
+  
+} from "react-router-dom";
+import "./App.css";
+import "./compomnents/appStyle.css";
+import Home from "./compomnents/pages/Home";
+import Navbar from "./compomnents/layout/Navbar";
+import About from "./compomnents/pages/About";
+import Contect from "./compomnents/pages/Contect";
+
+import PageNotFound from "./compomnents/pages/PageNotFound";
+import Adduser from "./compomnents/users/Adduser";
+
+import EditUser from "./compomnents/users/EditUser";
+import ViewUser from "./compomnents/users/ViewUser";
+//import ResentQuotes from './compomnents/new'
+//import NewoneRegform from './compomnents/NewoneRegForm'
 
 
-
-
-
- class App extends Component {
+class App extends Component {
   render() {
     return (
-      <div>
-        {/* <ClickCounter/> */}
-        {/* <Login/>  */}
-        {/* <RegistrationForm/> */}
-         {/* <NewRegform/>  */}
-          {/* <Newform/>   */}
-          {/* <WithMaterialUI/> */}
-          {/* <RegValidation/> */}
-         <NewoneRegform/> 
-         {/* <Checked/>  */}
-        {/* <PostList/> */}
-        {/* <PostForm/> */}
-        {/* <DataFachinghooks/> */}
-
-        {/* <ParentComponent/> */}
-        
-      </div>
-    )
+      <Router>
+        <div className="App">
+{/* 
+           <NewoneRegform/>   */}
+          <Navbar />
+          <Routes>
+   
+            <Route exact path="/" element={<Home/>} />
+           
+            <Route exact path="/About" element={<About/>}></Route>
+            <Route exact path="/Contect" element={<Contect/>}></Route>
+            <Route exact path="/users/Adduser" element={<Adduser/>}></Route>
+            <Route exact path="/users/Edituser/:id" element={<EditUser/>}></Route>
+            <Route exact path="/users/:id" element={<ViewUser/>}></Route>
+            
+            <Route exact path="*" element={<PageNotFound/>}></Route>
+           
+            {/* <Navigate to="/" /> */}
+          </Routes>
+        </div>
+      </Router>
+    );
   }
 }
 
-export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
-      {/* <h1 className={style.Sucess}>Sucess</h1>
-      <Inline/> */}
-      {/* <Stylesheet primary={false}/> */}
-      {/* <NameList/> */}
-      {/* <UserGreeting/> */}
-      {/*<ParentComponent></ParentComponent>*/}
-      {/*<EventBind></EventBind>*/}
-      {/*<Functionclick/>*/}
-      {/*<Classclick/>*/}
-      {/*<Counter/>*/}
-      {/*<Message></Message>*/}
-     {/*<Greet name='Krishiv' nikename='ganu'>
-        <p>This is Children compomnents</p>
-      </Greet>
-      <Greet name='Dhyana' nikename='dyanukdi'>
-        <button>Click</button>
-      </Greet>
-      <Greet name='Henil' nikename='henu' />
-      <Greet name='pranav' nikename='pranu' />
-      <Welcome name='Henil' nikename='henu'></Welcome>
-    <Welcome name='pranav'nikename='pranu'></Welcome>*/}
-  {/* <Hello></Hello> */}
-      {/* <Form/> */}
-        {/* <Table/> */}
-       {/*<ParentComp/>*/}
+export default App;
